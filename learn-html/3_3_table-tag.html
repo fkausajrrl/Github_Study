@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table-tag</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 2px solid rgb(34, 16, 50);
+      }
+      .col1 {
+        width: 40px;
+      }
+      .col2 {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>테이블 기본</h1>
+    <!--border가 웹 표준이 아니다 웹표준을 지키면 장점들이 있다고 한다. 이게 무엇일까?-->
+    <!--table에서 표를 그릴대는 style 즉 CSS 사용 해야한다.-->
+    <table>
+      <caption>
+        데이터 시트
+      </caption>
+      <tr>
+        <th>가</th>
+        <th>나</th>
+        <th>다</th>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td>취미</td>
+        <td>특기</td>
+      </tr>
+      <tr>
+        <td>모세인</td>
+        <td>자바</td>
+        <td>HTML</td>
+      </tr>
+    </table>
+    <hr />
+    <h1>테이블 그룹 태그</h1>
+    <table>
+      <caption>
+        학급 점수
+      </caption>
+      <colgroup>
+        <!-- <col width="40px" />에서 width이거도 웹 표준이 아니다!-->
+        <!--그냥 모양 잡는거 관련은 다 CSS에서 하는게 웹 표준인거같은데 혹시 예외가 있는지?-->
+        <col class="col1" />
+        <col class="col2" />
+        <col class="col3" />
+        <col class="col4" />
+        <col class="col5" />
+        <col class="col6" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>반</th>
+          <th>전자회로</th>
+          <th>데이터 통신</th>
+          <th>무선통신공학</th>
+          <th>디지털 공학</th>
+          <th>리눅스 활용</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">1반</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>90</td>
+          <td>90</td>
+          <td>90</td>
+          <td>90</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">평균</td>
+          <td>95</td>
+          <td>95</td>
+          <td>95</td>
+          <td>95</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
