@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inline block2</title>
+    <style>
+      div {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        margin-top: 10px;
+      }
+      span {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+      }
+    </style>
+    <!--inline레벨요소는 가로 세로 길이 조절이 안된다!-->
+    <!--block레벨 요소는 width,height,margin 속성 적용-->
+    <!--inline레벨 요소는 width,height속성 적용X,margin- top,bottom적용 X 대신 line -height이용-->
+    <!--개발자 도구에서 
+    element.style {
+          display: inline;
+      }로 하면 블록 영역을 인라인 영역으로 변경 가능, 반대로 인라인을 블럭으로도 변경 가능
+
+    -->
+  </head>
+  <body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <span>1</span><br /><span>2</span><br /><span>3</span>
+    <a href="https://www.naver.com"><button>naver</button></a>
+    <!--https안 붙이면 안되용-->
+  </body>
+</html>
